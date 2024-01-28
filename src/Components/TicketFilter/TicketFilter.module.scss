@@ -1,0 +1,64 @@
+.ticketFilter {
+  margin-bottom: 16px;
+
+  &List {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &Item {
+    display: flex;
+  }
+}
+
+.filterButton {
+  display: flex;
+  width: 168px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #DFE5EC;
+  border-radius: 6px;
+  color: #4A4A4A;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.selected:hover {
+  background-color: #42a5f5;
+}
+
+@media (max-width: 768px) {
+  .filterButton {
+    width: auto;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .ticketFilter {
+    margin-bottom: 12px;
+  }
+
+  .filterButton {
+    font-size: 8px;
+    line-height: 11px;
+  }
+}

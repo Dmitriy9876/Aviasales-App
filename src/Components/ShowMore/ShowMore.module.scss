@@ -1,0 +1,27 @@
+.showMoreBtn {
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #2196F3;
+  border: none;
+  border-radius: 5px;
+  color:  #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.showMoreBtn:hover {
+  background-color: #42a5f5;
+}
+
+@media (max-width: 576px) {
+  .showMoreBtn {
+    height: 40px;
+    font-size: 10px;
+  }
+}

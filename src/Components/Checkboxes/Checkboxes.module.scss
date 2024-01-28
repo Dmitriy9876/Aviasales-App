@@ -1,0 +1,130 @@
+.filter {
+  max-width: 232px;
+  max-height: 252px;
+  background-color: #fff;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+
+  &Title {
+    margin: 0;
+    padding: 20px 20px 10px;
+    color: #4A4A4A;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &Item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 13px;
+    color: #4A4A4A;
+
+    &:hover {
+      background: #F1FCFF;
+    }
+
+    &Label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    &Input {
+      opacity: 0;
+      position: absolute;
+      height: 100%;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      height: 20px;
+      width: 20px;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px;
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: none;
+      }
+    }
+
+    &Input:checked + .checkmark {
+      border-color: #2196F3;
+
+      &:after {
+        display: block;
+        left: 6px;
+        top: 1px;
+        width: 6px;
+        height: 11px;
+        border: solid #2196F3;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter {
+    flex-shrink: 1;
+
+    &Title {
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .filter{
+    max-height: 252px;
+
+    &Title {
+      font-size: 9px;
+      padding: 16px 10px;
+    }
+
+    &Item {
+      font-size: 9px;
+      padding: 10px;
+
+      .checkmark {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .filter{
+    max-height: 211px;
+
+    &Title {
+      font-size: 9px;
+      padding: 9px 10px 8px;
+    }
+
+    &Item {
+      font-size: 9px;
+      padding: 6px 5px;
+
+      .checkmark {
+        margin-right: 8px;
+      }
+    }
+  }
+}

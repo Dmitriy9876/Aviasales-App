@@ -1,0 +1,77 @@
+.toTop {
+  width: 4em;
+  height: 4em;
+  color: #2196F3;
+  padding-top: 1em;
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  border: none;
+  text-decoration: none;
+  transition: all 1.3s ease-out;
+  background-color: transparent;
+  padding-top: 3em;
+}
+
+.toTop::after {
+  content: 'Вверх';
+  position: absolute;
+  font-size: 14px;
+  left: 8px;
+}
+
+.toTop:before {
+  content: '🛧';
+  font-size: 1.9em;
+  position: absolute;
+  bottom: 16px;
+  margin-left: -.7em;
+  border: solid .1em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.3s ease-out;
+}
+
+.toTop:hover {
+  color: #2195f37e;
+  border-color: #2195f37e;
+}
+
+.toTop:hover:before {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .toTop:before {
+    font-size: 1.4em;
+    top: 10px;
+  }
+  .toTop::after {
+    font-size: 12px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .toTop {
+    left: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .toTop {
+    left: 25px;
+  }
+  .toTop:before {
+    font-size: 1em;
+    top: 22px;
+  }
+
+  .toTop::after {
+    font-size: 8px;
+    left: 16px;
+  }
+}

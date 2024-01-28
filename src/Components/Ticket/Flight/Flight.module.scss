@@ -1,0 +1,88 @@
+.flight {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.travelTime {
+  width: 40%;
+}
+
+.routeLength {
+  width: 30%;
+}
+
+.transfers {
+  width: 30%;
+}
+
+h4 {
+  color: #A0B0B9;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+span {
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+@media (max-width: 768px) {
+  .travelTime {
+    width: 37%;
+  }
+
+  .routeLength {
+    width: 28%;
+  }
+  
+  .transfers {
+    width: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  .travelTime {
+    width: 40%;
+  }
+  
+  .routeLength {
+    width: 30%;
+  }
+  
+  .transfers {
+    width: 30%;
+  }
+}
+
+@media (max-width: 320px) {
+  .flight {
+    margin-bottom: 12px;
+  }
+
+  .travelTime {
+    width: 35%;
+  }
+  
+  .routeLength {
+    width: 25%;
+  }
+  
+  .transfers {
+    width: 40%;
+  }
+
+  h4 {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  span {
+    font-size: 8px;
+  }
+}

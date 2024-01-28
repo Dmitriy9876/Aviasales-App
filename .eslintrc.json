@@ -1,0 +1,14 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:react/recommended"],
+  "plugins": ["react", "jsx-a11y", "import", "react-hooks"],
+  "parser": "@babel/eslint-parser",
+  "env": {
+      "browser": true
+  },
+  "rules": {
+      "react/react-in-jsx-scope": "off",
+      "no-console": "off",
+      "default-param-last": "off",
+      "import/prefer-default-export": "off"
+  }
+}

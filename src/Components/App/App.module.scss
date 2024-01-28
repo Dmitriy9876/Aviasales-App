@@ -1,0 +1,53 @@
+body {
+  font-family: 'Open Sans';
+  background-color: #F3F7FA;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.wrapperContent {
+  display: flex;
+  margin-top: 50px;
+}
+
+.wrapperTickets {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapperTickets {
+    margin-left: 2px;
+  }
+
+  .wrapperContent {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapperContent {
+    margin-top: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}
